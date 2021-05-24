@@ -1,0 +1,22 @@
+{
+  "name": "js-topics",
+  "version": "1.0.0",
+  "description": "JS examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tutorials-coding/js-topics.git"
+  },
+  "author": "vadimkorr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tutorials-coding/js-topics/issues"
+  },
+  "homepage": "https://github.com/tutorials-coding/js-topics#readme",
+  "dependencies": {
+    "date-fns": "^2.21.3"
+  }
+}
