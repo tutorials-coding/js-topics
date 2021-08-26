@@ -10,5 +10,5 @@ const multiply = (a) => {
 
 let res = multiply(2)(5)
 // res - число или функция?
-console.log(`Result is ${res}`)    // => Result is 10
-console.log(`Result is ${res(5)}`) // => Result is 50
+console.log(`Result: ${res}`)    // => Result: 10
+console.log(`Result: ${res(5)}`) // => Result: 50
