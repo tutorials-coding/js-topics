@@ -6,11 +6,11 @@ const target = {
 
 const handler = {
   get: (target, prop, receiver) => {
-    return 'H E L L O !'
+    console.log('H E L L O !')
+    return target[prop]
   },
 }
 
 const proxy = new Proxy(target, handler)
 
-console.log(target.value)
 console.log(proxy.value)
