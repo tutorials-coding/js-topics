@@ -13,9 +13,21 @@ const handler = {
     }
     return Reflect.get(...arguments)
   },
+  set: function (target, prop, value) {
+    if (prop === 'value') {
+      if (value.length > 10) {
+        throw new Error('length should be less or equal than 10')
+      }
+    }
+    target[prop] = value
+    return true
+  },
 }
 
 const proxy = new Proxy(target, handler)
 
 // console.log(proxy.value)
-console.log(proxy.value2)
+// console.log(proxy.value2)
+
+proxy.value = 'abcdefghijk'
+console.log(proxy.value)
