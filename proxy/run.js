@@ -4,7 +4,11 @@ const target = {
   value: 'hello',
 }
 
-const handler = {}
+const handler = {
+  get: (target, prop, receiver) => {
+    return 'H E L L O !'
+  },
+}
 
 const proxy = new Proxy(target, handler)
 
