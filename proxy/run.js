@@ -5,7 +5,7 @@ const target = {
 }
 
 const handler = {
-  get: (target, prop, receiver) => {
+  get: function (target, prop, receiver) {
     console.log('H E L L O !')
     return target[prop]
   },
